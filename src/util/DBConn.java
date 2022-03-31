@@ -3,12 +3,12 @@ package util;
 import java.sql.*;
 
 public class DBConn {
-    static String url = "jdbc:postgresql://localhost:5432/dpidms01";
-    static String user = "idms";
-    static String pwd = "idms";
+    static String url = "jdbc:microsoft:sqlserver://localhost:1433;databasename=tszxjy";
+    static String user = "sa";
+    static String pwd = "8888";
     static{
         try{
-            Class.forName("org.postgresql.Driver");
+            Class.forName("com.microsoft.jdbc.sqlserver.SQLServerDriver");
         }catch(Exception ex){
             ex.printStackTrace();
         }
