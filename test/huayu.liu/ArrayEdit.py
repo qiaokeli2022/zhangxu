@@ -37,4 +37,6 @@ def makeArray(x):
 
 
 if __name__ == '__main__':
-    makeArray(30)
+    message = "Make Array N * N : N = "
+    x = input(message)
+    makeArray(x)
